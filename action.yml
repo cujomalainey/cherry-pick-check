@@ -1,0 +1,18 @@
+# action.yml
+name: 'Cherry Pick Checker'
+description: 'Check PRs to release branches are on main'
+inputs:
+  require_ref:
+    description: 'Require "cherry picked from" line in commits (generated with -x), otherwise rely on patch id'
+    required: false
+    default: false
+  main_branch:
+    description: 'Parent branch name to verify presense of PR commits against'
+    required: false
+    default: 'main'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.require_ref }}
+    - ${{ inputs.main_branch }}
