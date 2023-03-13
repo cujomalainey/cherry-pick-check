@@ -2,7 +2,7 @@
 
 ![Apache 2 licensed](https://img.shields.io/github/license/cujomalainey/cherry-pick-check)
 
-This GitHub Action validates incoming PRs for release branches.
+This GitHub Action verifies all commits in the PR are in a parent branch. This check is meant for release branches and not development.
 
 **Table of Contents**
 
