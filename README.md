@@ -36,10 +36,10 @@ jobs:
 
 ## Inputs
 
-| Name           | Required | Description                                                                                  | Type   | Default |
-| -------------- | :------: | ---------------------------------------------------------------------------------------------| ------ | --------|
-| `required_ref` |          | Require "cherry picked from" line in commits (generated with -x), otherwise rely on patch id | bool   | false   |
-| `main_branch`  |          | Parent branch name to verify presense of PR commits against                                  | string | main    |
+| Name           | Required | Description                                                                                 | Type   | Default |
+| -------------- | :------: | --------------------------------------------------------------------------------------------| ------ | --------|
+| `required_ref` |          | Require "cherry picked from" line in commits (generated with -x), otherwise rely on subject | bool   | false   |
+| `main_branch`  |          | Parent branch name to verify presense of PR commits against                                 | string | main    |
 
 ## Outputs
 
