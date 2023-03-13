@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install latest nightly
+      - name: Check all commits exist in main
         uses: cujomalainey/cherry-pick-check@v1
         with:
             require_ref: true
