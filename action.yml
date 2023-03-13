@@ -1,5 +1,6 @@
 # action.yml
 name: 'Cherry Pick Checker'
+author: 'Curtis Malainey'
 description: 'Check PRs to release branches are on main'
 inputs:
   require_ref:
@@ -10,6 +11,9 @@ inputs:
     description: 'Parent branch name to verify presense of PR commits against'
     required: false
     default: 'main'
+branding:
+  icon: 'git-pull-request'
+  color: 'red'
 runs:
   using: 'docker'
   image: 'Dockerfile'
