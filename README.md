@@ -41,6 +41,8 @@ jobs:
 | `required_ref` |          | Require "cherry picked from" line in commits (generated with -x), otherwise rely on subject | bool   | false   |
 | `main_branch`  |          | Parent branch name to verify presense of PR commits against                                 | string | main    |
 
+If you want to cover multiple branches you can do this with a [`matrix`](https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs) and pass in the branches via the matrix param.
+
 ## Outputs
 
 No output, only status reports
